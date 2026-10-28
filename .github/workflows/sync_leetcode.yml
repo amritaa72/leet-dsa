@@ -1,8 +1,8 @@
 name: Sync Leetcode
 on:
-  workflow_dispatch: # Allows you to run it manually anytime
+  workflow_dispatch:
   schedule:
-    - cron: "0 8 * * *" # Runs automatically every single day at 8:00 AM UTC
+    - cron: "30 2 * * *" # Runs every morning at 8:00 AM IST
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,3 +14,8 @@ jobs:
           leetcode-csrf-token: ${{ secrets.LEETCODE_CSRF_TOKEN }}
           leetcode-session: ${{ secrets.LEETCODE_SESSION }}
           destination-folder: leetcode-solutions
+          
+      # Forces GitHub to attribute the contributions directly to your profile
+      - name: Configure Git Author
+        run: |
+          git config --global user.email "amritaavarshini777@gmail.com"
