@@ -15,7 +15,7 @@ jobs:
           leetcode-session: ${{ secrets.LEETCODE_SESSION }}
           destination-folder: leetcode-solutions
           
-      # Forces GitHub to attribute the contributions directly to your profile
+      # Keeps your email hidden while still lighting up your green dots
       - name: Configure Git Author
         run: |
-          git config --global user.email "amritaavarshini777@gmail.com"
+          git config --global user.email "216173663+amritaa72@users.noreply.github.com"
