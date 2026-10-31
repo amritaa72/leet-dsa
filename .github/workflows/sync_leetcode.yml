@@ -18,4 +18,4 @@ jobs:
       # Keeps your email hidden while still lighting up your green dots
       - name: Configure Git Author
         run: |
-          git config --global user.email "216173663+amritaa72@users.noreply.github.com"
+          git config --global user.email "amritaavarshini777@gmail.com"
